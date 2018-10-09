@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta name="Description" content="A ColdFusion Blog Aggregator" />
+	<meta name="Keywords" content="coldfusion,blogging,coldfusion bloggers" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="Distribution" content="Global" />
+	<meta name="Robots" content="index,follow" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feedproxy.google.com/ColdfusionbloggersorgFeed" />
+	<link rel="stylesheet" href="images/Techmania.css" type="text/css" />
+	<link rel="shortcut icon" href="/images/icon_016.png">
+	<title>{{title}}</title>
+	<script src="/js/jquery-2.1.1.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$("#search").on("submit", function(e) {
+			
+			var searchvalue = $.trim($("#search_query").val());
+			if(searchvalue === '') return false;
+			
+		});
+	})
+	</script>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({
+	          google_ad_client: "ca-pub-2994662940803294",
+	          enable_page_level_ads: true
+	     });
+	</script>
+</head>
+
+<body>
+
+<!-- wrap starts here -->
+<div id="wrap">
+	<div id="header">
+		<h1 id="logo-text">coldfusion<span class="gray">Bloggers</span></h1>
+		<h2 id="slogan">{{slogan}}</h2>
+		<div id="header-tabs">
+			<ul>
+				<li {{{selected "index" page}}}><a href="/"><span>Home</span></a></li>
+				<li {{{selected "feeds" page}}}><a href="/feeds"><span>Feeds</span></a></li>
+				<li {{{selected "contact" page}}}><a href="/contact"><span>Contact</span></a></li>
+				<li {{{selected "faqs" page}}}><a href="/faq"><span>FAQ</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- content-wrap starts here -->
+	<div id="content-wrap">
+		<div id="main">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- CFBloggers Ads -->
+		<ins class="adsbygoogle"
+		     style="display:block"
+		     data-ad-client="ca-pub-2994662940803294"
+		     data-ad-slot="8054560515"
+		     data-ad-format="auto"
+		     data-full-width-responsive="true"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+{{{body}}}
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- CFBloggers Ads -->
+		<ins class="adsbygoogle"
+		     style="display:block"
+		     data-ad-client="ca-pub-2994662940803294"
+		     data-ad-slot="8054560515"
+		     data-ad-format="auto"
+		     data-full-width-responsive="true"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		</div>
+		<div id="sidebar">
+			<h1>Search</h1>
+			<form method="post" id="search" action="/">
+				<p>
+					<input type="text" name="search_query" id="search_query" class="textbox">
+					<input name="search" class="searchbutton" value="Search" type="submit" />
+				</p>
+			</form>
+			<p>
+				<a href="https://www.cfwebtools.com" target="_blank"><img src="/images/cfwebtools180x150px.png" alt="CF Webtools" width="180"></a>
+				<a href="https://www.cfwebtools.com" target="_blank">Sponsored by CF Webtools</a>
+			</p>
+			<h1>About</h1>
+			<p>
+				ColdFusionBloggers.org is a curator of nearly 200 different ColdFusion-focused blogs.
+			</p>
+			<a class="twitter-timeline" href="https://twitter.com/CFOverflow" data-widget-id="299286251847163904">Tweets by @CFOverflow</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<p>
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- CFBloggers Ads -->
+		<ins class="adsbygoogle"
+		     style="display:block"
+		     data-ad-client="ca-pub-2994662940803294"
+		     data-ad-slot="8054560515"
+		     data-ad-format="auto"
+		     data-full-width-responsive="true"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		</p>
+			<p>
+			<a href="http://hostek.com/aff.php?aff=630&p=CF" rel="nofollow" target="_blank"><img src="https://hostek.com/banners/ht_120x600.gif" border="0"></a>
+			</p>
+		</div>
+		<!-- content-wrap ends here -->
+	</div>
+	<div id="footer">
+		<span id="footer-left">
+			Created by <strong><a href="http://www.raymondcamden.com">Raymond Camden</a></strong> |
+			Design by: <strong><a href="http://www.styleshout.com/">styleshout</a></strong>
+		</span>
+		<span id="footer-right">
+			<a href="/">Home</a> |  <a href="http://feedproxy.google.com/ColdfusionbloggersorgFeed">RSS Feed</a>
+		</span>
+	</div>
+<!-- wrap ends here -->
+</div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113153163-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-113153163-2');
+</script>
+
+
+</body>
+</html>
